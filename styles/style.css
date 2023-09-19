@@ -38,12 +38,12 @@
   }
 
 
-  .header__logo-image{
+  .header__logo-image {
     width: 148px;
     height: 105px;
   }
 
-  .address{
+  .address {
     display: flex;
     flex-direction: column;
     flex: 0 0 auto;
