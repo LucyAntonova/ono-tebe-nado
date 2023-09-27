@@ -16,7 +16,7 @@
   list-style: none;
 }
 
-.header__link_passive {
+.header__link_active {
   text-decoration: none;
 }
 
@@ -29,6 +29,7 @@
   flex: 0 0 auto;
   width: 148px;
   height: 105px;
+  padding-right: 300px;
 }
 
 .header__logo-image {
@@ -56,7 +57,6 @@
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
   height: inherit;
-  padding: 50px 40px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -98,7 +98,9 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  margin-top: 120px;
+  margin-top: 70px;
+  margin-bottom: 62px;
+  margin-right: 50px;
 }
 
 .cover__description-text {
@@ -165,12 +167,14 @@
   text-transform: uppercase;
   text-decoration: underline;
   font-family: Raleway, sans-serif;
+  padding: 50px 40px;
 }
 
 .card__text {
   font-size: 20px;
   line-height: 120%;
   font-family: Raleway, sans-serif;
+  padding: 50px 40px;
 }
 
 .card_type_book {
@@ -183,8 +187,6 @@
   background-size: cover;
 }
 
-.cover_card {
-}
 
 .lots__look-more-link {
   font-size: 20px;
