@@ -1,60 +1,50 @@
-
-  .header {
-    display: flex;
-    flex-wrap: wrap;
-    font-size: 18px;
-    padding: 92px 49px 92px 51px;
-    justify-content: space-between;
-    align-items: center;
-    
-  }
-
-  .header__menu {
-    width: 33%;
-  }
-
-  .header__links-list {
-    display: flex;
-    gap: 36px;;
-    
-  }
-
-  .header__links-list-item_no-bullit {
-    list-style: none;
-
-  }
-
-  .header__links-list-item {
-    list-style: circle;
-    border-bottom: #000;
-
-  }
-
-  
-  .header__logo {
-    flex: 0 0 auto;
-    width: 148px;
-    height: 105px
-  }
-
-
-  .header__logo-image {
-    width: 148px;
-    height: 105px;
-  }
-
-  .address {
-    display: flex;
-    flex-direction: column;
-    flex: 0 0 auto;
-    line-height: 135%;
-    font-style: normal;
-    text-underline-position: under;
-    padding-left: 15.5%;
-    width: 33%;
-    
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 18px;
+  padding: 92px 49px 92px 51px;
+  justify-content: space-between;
+  align-items: center;
 }
 
+.header__links-list {
+  display: flex;
+  gap: 36px;
+}
+
+.header__links-list-item_no-bullit {
+  list-style: none;
+}
+
+.header__link_passive {
+  text-decoration: none;
+}
+
+.header__links-list-item {
+  list-style: circle;
+  border-bottom: #000;
+}
+
+.header__logo {
+  flex: 0 0 auto;
+  width: 148px;
+  height: 105px;
+}
+
+.header__logo-image {
+  width: 148px;
+  height: 105px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  line-height: 135%;
+  font-style: normal;
+  text-underline-position: under;
+  width: 240px;
+}
 
 .cover {
   background: url("../images/cover.jpg");
@@ -64,9 +54,16 @@
 }
 
 .overlay {
-  padding: 165px 50px 50px;
   background-color: rgba(0, 0, 0, 0.6);
   height: inherit;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cover__text {
+  padding: 165px 50px 50px;
 }
 
 .cover__title {
@@ -79,14 +76,13 @@
   gap: 10px;
 }
 
-.aligned-text {
-  display: inline;
-}
-
 .letter-spacing-extended {
   letter-spacing: 0.6em;
 }
 
+.no-letter-spacing {
+  letter-spacing: 0;
+}
 
 .aligned-text_center {
   width: 100%;
@@ -108,7 +104,7 @@
 .cover__description-text {
   font-size: 22px;
   text-align: end;
-  word-spacing: 17.5px;
+  word-spacing: 18px;
   text-transform: uppercase;
   margin-right: 6%;
 }
@@ -135,6 +131,7 @@
 .lots__card-list {
   display: flex;
   flex-wrap: wrap;
+  list-style-type: none;
   gap: 25px;
   margin-bottom: 30px;
 }
@@ -155,11 +152,11 @@
 .card {
   height: inherit;
   color: #fff;
+  background-position: center;
 }
 
 .card_type_film {
   background: url(../images/card-lot-01.jpg);
-  background-position: center;
   background-size: cover;
 }
 
@@ -167,33 +164,26 @@
   font-size: 22px;
   text-transform: uppercase;
   text-decoration: underline;
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
 }
 
 .card__text {
   font-size: 20px;
   line-height: 120%;
-  font-family: Raleway;
-  
+  font-family: Raleway, sans-serif;
 }
 
 .card_type_book {
   background: url(../images/card-lot-02.jpg);
-  background-position: center;
   background-size: cover;
 }
 
 .card_type_picture {
   background: url(../images/card-lot-03.jpg);
-  background-position: center;
   background-size: cover;
 }
 
-.card .overlay {
-  padding: 50px 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+.cover_card {
 }
 
 .lots__look-more-link {
@@ -209,7 +199,6 @@
   gap: 25px;
   padding: 0 50px 180px 50px;
 }
-
 
 .about__logo {
   border-radius: 50%;
@@ -238,7 +227,6 @@
   font-size: 20px;
   margin-top: 100px;
   gap: 25px;
- 
 }
 
 .footer {
@@ -246,14 +234,6 @@
   justify-content: space-between;
   font-size: 18px;
   padding: 0 50px 90px;
-  
-}
-
-.f-address {
-  display: flex;
-  flex-direction: column;
-  padding-right: 15.5%;
-  width: 33%;
 }
 
 .footer__menu {
@@ -263,6 +243,7 @@
 
 .footer__menu-list {
   text-align: center;
+  list-style-type: none;
 }
 
 .footer__menu-list-item {
@@ -279,7 +260,6 @@
 
 .footer__social-list {
   flex: 0 0 auto;
-  width: 33.3%;
   display: flex;
   justify-content: end;
   gap: 48px;
